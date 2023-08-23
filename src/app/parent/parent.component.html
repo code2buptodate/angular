@@ -1,0 +1,7 @@
+<p>Parent Component</p>
+<app-child 
+*ngFor = "let citizen of citizenData"
+[age]="age"
+[hero]="citizen"
+(childData)="onDataFromChild($event)">
+</app-child>
